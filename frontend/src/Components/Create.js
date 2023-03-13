@@ -81,7 +81,7 @@ function Create(props) {
             >
               delete
             </button>
-            <p id="text" style={{ display: "none" }}>
+            <p id={props.name + "text"} style={{ display: "none" }}>
               check the pokemons to remove
             </p>
             <button
@@ -98,7 +98,7 @@ function Create(props) {
                 }
                 var x = document.getElementById(name + "down");
                 x.style.display = "inline-block";
-                var l = document.getElementById("text");
+                var l = document.getElementById(name + "text");
                 l.style.display = "inline-block";
                 var y = document.getElementById(name + "update");
                 y.style.display = "inline-block";
@@ -211,7 +211,7 @@ function Create(props) {
               m.contentEditable = false;
               m.style.backgroundColor = " rgb(141, 141, 238)";
               m.textContent = name;
-              var l = document.getElementById("text");
+              var l = document.getElementById(name + "text");
               l.style.display = "none";
             }}
           >
